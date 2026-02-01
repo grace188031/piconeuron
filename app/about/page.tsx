@@ -1,9 +1,9 @@
 import Link from 'next/link'
-import { 
-  Users, 
-  Shield, 
-  Lightbulb, 
-  Rocket, 
+import {
+  Users,
+  Shield,
+  Lightbulb,
+  Rocket,
   Heart,
   ArrowRight,
   CheckCircle
@@ -20,16 +20,16 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="pt-32 pb-16 px-6">
         <div className="max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-pico-accent/10 border border-pico-accent/20 rounded-full text-sm text-pico-accent mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-pico-accent/10 border border-pico-accent/20 rounded-full text-sm text-pico-accent mb-6 animate-fade-in">
             <Users className="w-4 h-4" />
             Meet the Team
           </div>
-          
-          <h1 className="font-display text-4xl md:text-5xl font-semibold mb-6">
+
+          <h1 className="font-display text-4xl md:text-5xl font-semibold mb-6 animate-slide-up">
             About Piconeuron
           </h1>
-          
-          <p className="text-lg text-slate-400">
+
+          <p className="text-lg text-slate-400 animate-slide-up stagger-1">
             Hi—we&apos;re a two-person team (husband & wife) building MicroSaaS products. We both come from cybersecurity, and we care deeply about creating tools that are useful, simple, and respectful of user data.
           </p>
         </div>
@@ -38,7 +38,7 @@ export default function AboutPage() {
       {/* Our Story */}
       <section className="py-16 px-6">
         <div className="max-w-3xl mx-auto">
-          <div className="card p-8 mb-12">
+          <div className="card card-hover p-8 mb-12 animate-slide-up stagger-2">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-16 h-16 rounded-full bg-gradient-to-br from-pico-accent/20 to-emerald-500/20 border border-pico-slate flex items-center justify-center">
                 <Heart className="w-8 h-8 text-pico-accent" />
@@ -48,7 +48,7 @@ export default function AboutPage() {
                 <p className="text-slate-500 text-sm">A small studio, not a faceless corporation</p>
               </div>
             </div>
-            
+
             <div className="space-y-4 text-slate-400">
               <p>
                 We started Piconeuron because we wanted to build software the way we believe it should be built: focused, secure, and honest. After years working in cybersecurity, we&apos;ve seen too many products that play fast and loose with user data or bury important information in confusing terms of service.
@@ -60,12 +60,12 @@ export default function AboutPage() {
           </div>
 
           {/* Values */}
-          <h2 className="font-display text-2xl font-semibold mb-6">
+          <h2 className="font-display text-2xl font-semibold mb-6 animate-slide-up">
             Why MicroSaaS?
           </h2>
-          
+
           <div className="space-y-4 mb-12">
-            <div className="card p-5 flex items-start gap-4">
+            <div className="card card-hover p-5 flex items-start gap-4 animate-slide-up stagger-1">
               <div className="w-10 h-10 rounded-lg bg-pico-accent/10 flex items-center justify-center flex-shrink-0">
                 <Lightbulb className="w-5 h-5 text-pico-accent" />
               </div>
@@ -77,7 +77,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="card p-5 flex items-start gap-4">
+            <div className="card card-hover p-5 flex items-start gap-4 animate-slide-up stagger-2">
               <div className="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center flex-shrink-0">
                 <Rocket className="w-5 h-5 text-emerald-400" />
               </div>
@@ -89,7 +89,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="card p-5 flex items-start gap-4">
+            <div className="card card-hover p-5 flex items-start gap-4 animate-slide-up stagger-3">
               <div className="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center flex-shrink-0">
                 <Users className="w-5 h-5 text-amber-400" />
               </div>
@@ -107,7 +107,7 @@ export default function AboutPage() {
       {/* Security Background */}
       <section className="py-16 px-6 bg-pico-navy/30">
         <div className="max-w-3xl mx-auto">
-          <div className="flex items-start gap-4 mb-8">
+          <div className="flex items-start gap-4 mb-8 animate-slide-up">
             <div className="w-12 h-12 rounded-xl bg-pico-accent/10 border border-pico-accent/20 flex items-center justify-center flex-shrink-0">
               <Shield className="w-6 h-6 text-pico-accent" />
             </div>
@@ -122,7 +122,7 @@ export default function AboutPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="card p-5">
+            <div className="card card-hover p-5 animate-slide-up stagger-1">
               <div className="flex items-center gap-2 text-emerald-400 mb-2">
                 <CheckCircle className="w-4 h-4" />
                 <span className="font-medium text-sm">Privacy by Design</span>
@@ -132,7 +132,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="card p-5">
+            <div className="card card-hover p-5 animate-slide-up stagger-2">
               <div className="flex items-center gap-2 text-emerald-400 mb-2">
                 <CheckCircle className="w-4 h-4" />
                 <span className="font-medium text-sm">Minimal Data Collection</span>
@@ -142,7 +142,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="card p-5">
+            <div className="card card-hover p-5 animate-slide-up stagger-3">
               <div className="flex items-center gap-2 text-emerald-400 mb-2">
                 <CheckCircle className="w-4 h-4" />
                 <span className="font-medium text-sm">Secure Architecture</span>
@@ -152,7 +152,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="card p-5">
+            <div className="card card-hover p-5 animate-slide-up stagger-4">
               <div className="flex items-center gap-2 text-emerald-400 mb-2">
                 <CheckCircle className="w-4 h-4" />
                 <span className="font-medium text-sm">Transparent Practices</span>
@@ -163,13 +163,13 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="mt-8">
-            <Link 
+          <div className="mt-8 animate-slide-up stagger-5">
+            <Link
               href="/security"
-              className="inline-flex items-center gap-2 text-pico-accent hover:underline"
+              className="group inline-flex items-center gap-2 text-pico-accent hover:text-white transition-colors"
             >
               Learn more about our security practices
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
         </div>
@@ -177,20 +177,20 @@ export default function AboutPage() {
 
       {/* CTA */}
       <section className="py-20 px-6">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-center animate-slide-up">
           <h2 className="font-display text-3xl font-semibold mb-4">
             Want to Say Hello?
           </h2>
           <p className="text-slate-400 mb-8">
             We&apos;d love to hear from you—whether you have questions, feedback, or just want to connect.
           </p>
-          <a 
-            href="mailto:support@piconeuron.com"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-pico-accent hover:bg-pico-accent-dim text-white font-medium rounded-lg transition-all"
+          <Link
+            href="/support#contact"
+            className="group inline-flex items-center gap-2 px-6 py-3 bg-pico-accent hover:bg-pico-accent-dim text-white font-medium rounded-lg transition-all"
           >
             Get in Touch
-            <ArrowRight className="w-4 h-4" />
-          </a>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Link>
         </div>
       </section>
     </div>

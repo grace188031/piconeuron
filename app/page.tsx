@@ -1,17 +1,17 @@
 import Link from 'next/link'
-import { 
-  Shield, 
-  Users, 
-  Zap, 
-  CreditCard, 
-  Lock, 
-  Database, 
-  Ban, 
+import {
+  Shield,
+  Users,
+  Zap,
+  CreditCard,
+  Lock,
+  Database,
+  Ban,
   ArrowRight,
   ExternalLink,
-  Mail,
   ChevronRight,
-  Sparkles
+  Sparkles,
+  MessageCircle
 } from 'lucide-react'
 
 export default function Home() {
@@ -62,17 +62,17 @@ export default function Home() {
       <section id="products" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-semibold mb-4">
+            <h2 className="font-display text-3xl md:text-4xl font-semibold mb-4 animate-slide-up">
               Our Products
             </h2>
-            <p className="text-slate-400 max-w-xl mx-auto">
+            <p className="text-slate-400 max-w-xl mx-auto animate-slide-up stagger-1">
               Focused tools that solve real problems.
             </p>
           </div>
 
           {/* Product Card */}
-          <div className="max-w-2xl mx-auto">
-            <a 
+          <div className="max-w-2xl mx-auto animate-slide-up stagger-2">
+            <a
               href="https://learnmetrics.piconeuron.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -103,7 +103,7 @@ export default function Home() {
           </div>
 
           {/* Coming Soon Placeholder */}
-          <p className="text-center text-slate-600 text-sm mt-8">
+          <p className="text-center text-slate-600 text-sm mt-8 animate-slide-up stagger-3">
             More products in development. We ship when it&apos;s ready.
           </p>
         </div>
@@ -113,17 +113,17 @@ export default function Home() {
       <section className="py-20 px-6 bg-pico-navy/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-semibold mb-4">
+            <h2 className="font-display text-3xl md:text-4xl font-semibold mb-4 animate-slide-up">
               What to Expect From Us
             </h2>
-            <p className="text-slate-400 max-w-xl mx-auto">
+            <p className="text-slate-400 max-w-xl mx-auto animate-slide-up stagger-1">
               We believe in doing things differently.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Card 1 */}
-            <div className="card p-6">
+            <div className="card card-hover p-6 animate-slide-up stagger-2">
               <div className="w-10 h-10 rounded-lg bg-pico-accent/10 border border-pico-accent/20 flex items-center justify-center mb-4">
                 <Users className="w-5 h-5 text-pico-accent" />
               </div>
@@ -134,7 +134,7 @@ export default function Home() {
             </div>
 
             {/* Card 2 */}
-            <div className="card p-6">
+            <div className="card card-hover p-6 animate-slide-up stagger-3">
               <div className="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center mb-4">
                 <Zap className="w-5 h-5 text-amber-400" />
               </div>
@@ -145,7 +145,7 @@ export default function Home() {
             </div>
 
             {/* Card 3 */}
-            <div className="card p-6">
+            <div className="card card-hover p-6 animate-slide-up stagger-4">
               <div className="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-4">
                 <CreditCard className="w-5 h-5 text-emerald-400" />
               </div>
@@ -163,24 +163,24 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-pico-accent/10 border border-pico-accent/20 rounded-full text-sm text-pico-accent mb-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-pico-accent/10 border border-pico-accent/20 rounded-full text-sm text-pico-accent mb-6 animate-fade-in">
                 <Shield className="w-4 h-4" />
                 Cybersecurity Background
               </div>
-              
-              <h2 className="font-display text-3xl md:text-4xl font-semibold mb-6">
+
+              <h2 className="font-display text-3xl md:text-4xl font-semibold mb-6 animate-slide-up">
                 Security & Privacy,
                 <br />
                 <span className="text-slate-400">by Default</span>
               </h2>
-              
-              <p className="text-slate-400 mb-8">
+
+              <p className="text-slate-400 mb-8 animate-slide-up stagger-1">
                 We come from a cybersecurity background, so our default approach is to protect your data—not exploit it.
               </p>
 
-              <Link 
+              <Link
                 href="/security"
-                className="group inline-flex items-center gap-2 text-pico-accent hover:text-white transition-colors"
+                className="group inline-flex items-center gap-2 text-pico-accent hover:text-white transition-colors animate-slide-up stagger-2"
               >
                 Read our Security & Privacy page
                 <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -189,7 +189,7 @@ export default function Home() {
 
             <div className="space-y-4">
               {/* Security Card 1 */}
-              <div className="card p-5 flex items-start gap-4">
+              <div className="card card-hover p-5 flex items-start gap-4 animate-slide-up stagger-1">
                 <div className="w-10 h-10 rounded-lg bg-pico-navy flex items-center justify-center flex-shrink-0">
                   <Database className="w-5 h-5 text-pico-accent" />
                 </div>
@@ -202,7 +202,7 @@ export default function Home() {
               </div>
 
               {/* Security Card 2 */}
-              <div className="card p-5 flex items-start gap-4">
+              <div className="card card-hover p-5 flex items-start gap-4 animate-slide-up stagger-2">
                 <div className="w-10 h-10 rounded-lg bg-pico-navy flex items-center justify-center flex-shrink-0">
                   <Lock className="w-5 h-5 text-pico-accent" />
                 </div>
@@ -215,7 +215,7 @@ export default function Home() {
               </div>
 
               {/* Security Card 3 */}
-              <div className="card p-5 flex items-start gap-4">
+              <div className="card card-hover p-5 flex items-start gap-4 animate-slide-up stagger-3">
                 <div className="w-10 h-10 rounded-lg bg-pico-navy flex items-center justify-center flex-shrink-0">
                   <Ban className="w-5 h-5 text-pico-accent" />
                 </div>
@@ -234,29 +234,25 @@ export default function Home() {
       {/* Contact Section */}
       <section className="py-20 px-6 bg-pico-navy/30">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="font-display text-3xl md:text-4xl font-semibold mb-4">
+          <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-pico-accent/10 border border-pico-accent/20 flex items-center justify-center animate-fade-in">
+            <MessageCircle className="w-8 h-8 text-pico-accent" />
+          </div>
+          <h2 className="font-display text-3xl md:text-4xl font-semibold mb-4 animate-slide-up">
             Get in Touch
           </h2>
-          <p className="text-slate-400 mb-8">
+          <p className="text-slate-400 mb-8 animate-slide-up stagger-1">
             Questions, help, or partnership ideas? We&apos;d love to hear from you.
           </p>
-
-          <a 
-            href="mailto:support@piconeuron.com"
-            className="group inline-flex items-center gap-3 px-8 py-4 bg-pico-navy border border-pico-slate/50 hover:border-pico-accent/50 rounded-xl transition-all"
+          <Link
+            href="/support#contact"
+            className="group inline-flex items-center gap-2 px-8 py-4 bg-pico-accent hover:bg-pico-accent-dim text-white font-medium rounded-xl transition-all animate-slide-up stagger-2"
           >
-            <div className="w-10 h-10 rounded-lg bg-pico-accent/10 flex items-center justify-center">
-              <Mail className="w-5 h-5 text-pico-accent" />
-            </div>
-            <div className="text-left">
-              <div className="font-display font-medium group-hover:text-pico-accent transition-colors">
-                support@piconeuron.com
-              </div>
-              <div className="text-sm text-slate-500">
-                We typically respond within 1–2 business days
-              </div>
-            </div>
-          </a>
+            Contact Us
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Link>
+          <p className="text-slate-500 text-sm mt-4 animate-slide-up stagger-3">
+            We typically respond within 1–2 business days
+          </p>
         </div>
       </section>
     </div>

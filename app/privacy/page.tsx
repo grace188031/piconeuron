@@ -1,4 +1,4 @@
-import { Lock, Mail, ExternalLink } from 'lucide-react'
+import { Lock, ExternalLink, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata = {
@@ -11,20 +11,20 @@ export default function PrivacyPage() {
     <div className="grid-pattern">
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-pico-accent/10 border border-pico-accent/20 rounded-full text-sm text-pico-accent mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-pico-accent/10 border border-pico-accent/20 rounded-full text-sm text-pico-accent mb-6 animate-fade-in">
             <Lock className="w-4 h-4" />
             Legal
           </div>
-          
-          <h1 className="font-display text-4xl md:text-5xl font-semibold mb-6">
+
+          <h1 className="font-display text-4xl md:text-5xl font-semibold mb-6 animate-slide-up">
             Privacy Policy
           </h1>
-          
-          <p className="text-slate-500 text-sm mb-4">
+
+          <p className="text-slate-500 text-sm mb-4 animate-slide-up stagger-1">
             Last updated: January 2025
           </p>
-          
-          <div className="card p-4 mb-12 border-pico-accent/30">
+
+          <div className="card card-hover p-4 mb-12 border-pico-accent/30 animate-slide-up stagger-2">
             <p className="text-slate-400 text-sm">
               For our detailed security practices, see our{' '}
               <Link href="/security" className="text-pico-accent hover:underline">
@@ -33,7 +33,7 @@ export default function PrivacyPage() {
             </p>
           </div>
 
-          <div className="prose prose-invert prose-slate max-w-none">
+          <div className="prose prose-invert prose-slate max-w-none animate-slide-up stagger-3">
             <div className="space-y-8">
               <section>
                 <h2 className="font-display text-xl font-semibold mb-4 text-white">Overview</h2>
@@ -151,14 +151,14 @@ export default function PrivacyPage() {
                 <p className="text-slate-400 mb-4">
                   Each product may have specific data practices. See individual product privacy pages:
                 </p>
-                <a 
+                <a
                   href="https://learnmetrics.piconeuron.com/privacy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-pico-accent hover:underline"
+                  className="group inline-flex items-center gap-1 text-pico-accent hover:text-white transition-colors"
                 >
                   Learnmetrics Privacy Policy
-                  <ExternalLink className="w-3 h-3" />
+                  <ExternalLink className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
                 </a>
               </section>
 
@@ -171,16 +171,16 @@ export default function PrivacyPage() {
 
               <section>
                 <h2 className="font-display text-xl font-semibold mb-4 text-white">Contact</h2>
-                <p className="text-slate-400">
-                  Questions about this Privacy Policy? Contact us at:
+                <p className="text-slate-400 mb-4">
+                  Questions about this Privacy Policy?
                 </p>
-                <a 
-                  href="mailto:privacy@piconeuron.com"
-                  className="inline-flex items-center gap-2 text-pico-accent hover:underline mt-2"
+                <Link
+                  href="/support#contact"
+                  className="group inline-flex items-center gap-2 px-4 py-2 bg-pico-accent hover:bg-pico-accent-dim text-white text-sm font-medium rounded-lg transition-all"
                 >
-                  <Mail className="w-4 h-4" />
-                  privacy@piconeuron.com
-                </a>
+                  Contact Us
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </section>
             </div>
           </div>

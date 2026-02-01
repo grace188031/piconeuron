@@ -1,15 +1,15 @@
 import Link from 'next/link'
-import { 
-  Shield, 
-  Lock, 
-  Key, 
-  Database, 
-  RefreshCw, 
-  Ban, 
+import {
+  Shield,
+  Lock,
+  Key,
+  Database,
+  RefreshCw,
+  Ban,
   ExternalLink,
-  Mail,
   AlertCircle,
-  CheckCircle
+  CheckCircle,
+  ArrowRight
 } from 'lucide-react'
 
 export const metadata = {
@@ -23,18 +23,18 @@ export default function SecurityPage() {
       {/* Hero */}
       <section className="pt-32 pb-16 px-6">
         <div className="max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-pico-accent/10 border border-pico-accent/20 rounded-full text-sm text-pico-accent mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-pico-accent/10 border border-pico-accent/20 rounded-full text-sm text-pico-accent mb-6 animate-fade-in">
             <Shield className="w-4 h-4" />
             Our Practices
           </div>
-          
-          <h1 className="font-display text-4xl md:text-5xl font-semibold mb-6">
+
+          <h1 className="font-display text-4xl md:text-5xl font-semibold mb-6 animate-slide-up">
             Security & Privacy
             <br />
             <span className="text-slate-400">at Piconeuron</span>
           </h1>
-          
-          <p className="text-lg text-slate-400">
+
+          <p className="text-lg text-slate-400 animate-slide-up stagger-1">
             We&apos;re a small team, so we focus on practical security controls that reduce real risk—not checkbox compliance theater.
           </p>
         </div>
@@ -43,13 +43,13 @@ export default function SecurityPage() {
       {/* Core Practices */}
       <section className="py-16 px-6">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-display text-2xl font-semibold mb-8">
+          <h2 className="font-display text-2xl font-semibold mb-8 animate-slide-up">
             Our Core Practices
           </h2>
 
           <div className="space-y-6">
             {/* Practice 1 */}
-            <div className="card p-6 flex items-start gap-4">
+            <div className="card card-hover p-6 flex items-start gap-4 animate-slide-up stagger-1">
               <div className="w-12 h-12 rounded-xl bg-pico-accent/10 border border-pico-accent/20 flex items-center justify-center flex-shrink-0">
                 <Key className="w-6 h-6 text-pico-accent" />
               </div>
@@ -62,7 +62,7 @@ export default function SecurityPage() {
             </div>
 
             {/* Practice 2 */}
-            <div className="card p-6 flex items-start gap-4">
+            <div className="card card-hover p-6 flex items-start gap-4 animate-slide-up stagger-2">
               <div className="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0">
                 <Lock className="w-6 h-6 text-emerald-400" />
               </div>
@@ -75,7 +75,7 @@ export default function SecurityPage() {
             </div>
 
             {/* Practice 3 */}
-            <div className="card p-6 flex items-start gap-4">
+            <div className="card card-hover p-6 flex items-start gap-4 animate-slide-up stagger-3">
               <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center flex-shrink-0">
                 <RefreshCw className="w-6 h-6 text-amber-400" />
               </div>
@@ -88,7 +88,7 @@ export default function SecurityPage() {
             </div>
 
             {/* Practice 4 */}
-            <div className="card p-6 flex items-start gap-4">
+            <div className="card card-hover p-6 flex items-start gap-4 animate-slide-up stagger-4">
               <div className="w-12 h-12 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center flex-shrink-0">
                 <Ban className="w-6 h-6 text-rose-400" />
               </div>
@@ -106,15 +106,15 @@ export default function SecurityPage() {
       {/* Per-Product Notes */}
       <section className="py-16 px-6 bg-pico-navy/30">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-display text-2xl font-semibold mb-4">
+          <h2 className="font-display text-2xl font-semibold mb-4 animate-slide-up">
             Per-Product Notes
           </h2>
-          <p className="text-slate-400 mb-8">
+          <p className="text-slate-400 mb-8 animate-slide-up stagger-1">
             Each product may collect different data depending on its purpose. We document specifics on each product&apos;s own Privacy page.
           </p>
 
           {/* Product Privacy Card */}
-          <div className="card p-6 mb-8">
+          <div className="card card-hover p-6 mb-8 animate-slide-up stagger-2">
             <div className="flex items-start gap-4">
               <div className="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0">
                 <Database className="w-5 h-5 text-emerald-400" />
@@ -135,14 +135,14 @@ export default function SecurityPage() {
                     <span>Stores practice history to track your progress</span>
                   </li>
                 </ul>
-                <a 
+                <a
                   href="https://learnmetrics.piconeuron.com/privacy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-pico-accent text-sm mt-4 hover:underline"
+                  className="group inline-flex items-center gap-1 text-pico-accent text-sm mt-4 hover:text-white transition-colors"
                 >
                   View Learnmetrics Privacy Policy
-                  <ExternalLink className="w-3 h-3" />
+                  <ExternalLink className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
                 </a>
               </div>
             </div>
@@ -153,7 +153,7 @@ export default function SecurityPage() {
       {/* Vulnerability Reporting */}
       <section className="py-16 px-6">
         <div className="max-w-3xl mx-auto">
-          <div className="card p-8 border-pico-accent/30">
+          <div className="card card-hover p-8 border-pico-accent/30 animate-slide-up">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-xl bg-pico-accent/10 border border-pico-accent/20 flex items-center justify-center flex-shrink-0">
                 <AlertCircle className="w-6 h-6 text-pico-accent" />
@@ -163,15 +163,15 @@ export default function SecurityPage() {
                   Report a Security Vulnerability
                 </h2>
                 <p className="text-slate-400 mb-4">
-                  Found a security issue? We appreciate responsible disclosure. Please email us with details and we&apos;ll acknowledge within 3 business days.
+                  Found a security issue? We appreciate responsible disclosure. Use our contact form and select &quot;Security Report&quot; as the subject. We&apos;ll acknowledge within 3 business days.
                 </p>
-                <a 
-                  href="mailto:security@piconeuron.com"
-                  className="inline-flex items-center gap-2 text-pico-accent hover:underline"
+                <Link
+                  href="/support#contact"
+                  className="group inline-flex items-center gap-2 px-4 py-2 bg-pico-accent hover:bg-pico-accent-dim text-white text-sm font-medium rounded-lg transition-all"
                 >
-                  <Mail className="w-4 h-4" />
-                  security@piconeuron.com
-                </a>
+                  Report Security Issue
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </div>
             </div>
           </div>
@@ -180,20 +180,20 @@ export default function SecurityPage() {
 
       {/* Contact */}
       <section className="py-16 px-6 bg-pico-navy/30">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-center animate-slide-up">
           <h2 className="font-display text-2xl font-semibold mb-4">
             Questions About Our Practices?
           </h2>
           <p className="text-slate-400 mb-6">
             We&apos;re happy to discuss our security and privacy approach.
           </p>
-          <a 
-            href="mailto:support@piconeuron.com"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-pico-accent hover:bg-pico-accent-dim text-white font-medium rounded-lg transition-all"
+          <Link
+            href="/support#contact"
+            className="group inline-flex items-center gap-2 px-6 py-3 bg-pico-accent hover:bg-pico-accent-dim text-white font-medium rounded-lg transition-all"
           >
-            <Mail className="w-4 h-4" />
             Contact Us
-          </a>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Link>
         </div>
       </section>
     </div>

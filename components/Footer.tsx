@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Shield, Mail, ExternalLink } from 'lucide-react'
+import { Shield, ExternalLink } from 'lucide-react'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -38,13 +38,12 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <a 
-                  href="mailto:support@piconeuron.com" 
-                  className="text-slate-500 hover:text-white text-sm transition-colors inline-flex items-center gap-1"
+                <Link
+                  href="/support#contact"
+                  className="text-slate-500 hover:text-white text-sm transition-colors"
                 >
-                  <Mail className="w-3 h-3" />
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

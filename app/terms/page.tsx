@@ -1,4 +1,5 @@
-import { Scale, Mail } from 'lucide-react'
+import { Scale, ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 export const metadata = {
   title: 'Terms of Service — Piconeuron',
@@ -10,20 +11,20 @@ export default function TermsPage() {
     <div className="grid-pattern">
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-pico-accent/10 border border-pico-accent/20 rounded-full text-sm text-pico-accent mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-pico-accent/10 border border-pico-accent/20 rounded-full text-sm text-pico-accent mb-6 animate-fade-in">
             <Scale className="w-4 h-4" />
             Legal
           </div>
-          
-          <h1 className="font-display text-4xl md:text-5xl font-semibold mb-6">
+
+          <h1 className="font-display text-4xl md:text-5xl font-semibold mb-6 animate-slide-up">
             Terms of Service
           </h1>
-          
-          <p className="text-slate-500 text-sm mb-12">
+
+          <p className="text-slate-500 text-sm mb-12 animate-slide-up stagger-1">
             Last updated: January 2025
           </p>
 
-          <div className="prose prose-invert prose-slate max-w-none">
+          <div className="prose prose-invert prose-slate max-w-none animate-slide-up stagger-2">
             <div className="space-y-8">
               <section>
                 <h2 className="font-display text-xl font-semibold mb-4 text-white">1. Agreement to Terms</h2>
@@ -83,16 +84,16 @@ export default function TermsPage() {
 
               <section>
                 <h2 className="font-display text-xl font-semibold mb-4 text-white">9. Contact</h2>
-                <p className="text-slate-400">
-                  Questions about these Terms? Contact us at:
+                <p className="text-slate-400 mb-4">
+                  Questions about these Terms?
                 </p>
-                <a 
-                  href="mailto:legal@piconeuron.com"
-                  className="inline-flex items-center gap-2 text-pico-accent hover:underline mt-2"
+                <Link
+                  href="/support#contact"
+                  className="group inline-flex items-center gap-2 px-4 py-2 bg-pico-accent hover:bg-pico-accent-dim text-white text-sm font-medium rounded-lg transition-all"
                 >
-                  <Mail className="w-4 h-4" />
-                  legal@piconeuron.com
-                </a>
+                  Contact Us
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </section>
             </div>
           </div>
