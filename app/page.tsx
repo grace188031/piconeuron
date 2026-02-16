@@ -73,7 +73,7 @@ export default function Home() {
           {/* Product Card */}
           <div className="max-w-2xl mx-auto animate-slide-up stagger-2">
             <a
-              href="https://learnmetrics.piconeuron.com"
+              href="https://explore-ieltsmetrics.piconeuron.com"
               target="_blank"
               rel="noopener noreferrer"
               className="group block card card-hover p-8"
@@ -88,7 +88,7 @@ export default function Home() {
               </div>
               
               <h3 className="font-display text-xl font-semibold mb-2 group-hover:text-pico-accent transition-colors">
-                Learnmetrics
+                IELTSmetrics
               </h3>
               
               <p className="text-slate-400 mb-4">

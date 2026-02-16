@@ -166,12 +166,12 @@ export default function SupportPage() {
                 <span className="text-xl">📊</span>
               </div>
               <div>
-                <h3 className="font-display font-semibold mb-1">Learnmetrics</h3>
+                <h3 className="font-display font-semibold mb-1">IELTSmetrics</h3>
                 <p className="text-slate-400 text-sm mb-3">
                   IELTS Speaking practice with AI-powered feedback
                 </p>
                 <a
-                  href="https://learnmetrics.piconeuron.com"
+                  href="https://explore-ieltsmetrics.piconeuron.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group inline-flex items-center gap-1 text-sm text-pico-accent hover:text-white transition-colors"

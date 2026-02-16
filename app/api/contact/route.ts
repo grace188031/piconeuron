@@ -17,7 +17,7 @@ export async function POST(request: Request) {
 
     // Send email via Resend
     const { error } = await resend.emails.send({
-      from: 'Piconeuron <noreply@piconeuron.com>',
+      from: 'Piconeuron <noreply@mail.piconeuron.com>',
       to: process.env.CONTACT_EMAIL || 'support@piconeuron.com',
       replyTo: email,
       subject: `[Piconeuron] ${subject || 'New Inquiry'} from ${name}`,

@@ -6,7 +6,7 @@ import { Footer } from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Piconeuron — Security-Minded MicroSaaS Studio',
   description: 'We build focused tools that help people make measurable progress—without bloated features or shady data practices.',
-  keywords: ['MicroSaaS', 'SaaS', 'Security', 'Privacy', 'Learnmetrics', 'IELTS'],
+  keywords: ['MicroSaaS', 'SaaS', 'Security', 'Privacy', 'IELTSmetrics', 'IELTS'],
   authors: [{ name: 'Piconeuron' }],
   openGraph: {
     title: 'Piconeuron — Security-Minded MicroSaaS Studio',

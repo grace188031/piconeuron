@@ -41,7 +41,7 @@ export default function StatusPage() {
             <div className="card card-hover p-4 flex items-center justify-between animate-slide-up stagger-4">
               <div className="flex items-center gap-3">
                 <CheckCircle className="w-5 h-5 text-emerald-400" />
-                <span>Learnmetrics</span>
+                <span>IELTSmetrics</span>
               </div>
               <span className="text-sm text-emerald-400">Operational</span>
             </div>

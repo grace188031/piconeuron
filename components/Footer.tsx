@@ -86,12 +86,12 @@ export function Footer() {
           </h4>
           <div className="flex flex-wrap gap-4">
             <a 
-              href="https://learnmetrics.piconeuron.com" 
+              href="https://explore-ieltsmetrics.piconeuron.com"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 bg-pico-navy/50 border border-pico-slate/50 rounded-lg text-sm text-slate-300 hover:border-pico-accent/50 hover:text-white transition-all"
             >
-              Learnmetrics
+              IELTSmetrics
               <ExternalLink className="w-3 h-3" />
             </a>
           </div>
