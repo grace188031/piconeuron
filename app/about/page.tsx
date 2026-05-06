@@ -11,7 +11,7 @@ import {
 
 export const metadata = {
   title: 'About — Piconeuron',
-  description: 'Meet the team behind Piconeuron. A husband-and-wife duo with cybersecurity backgrounds building MicroSaaS products.',
+  description: 'Piconeuron is a small, founder-led MicroSaaS studio building focused software tools shaped by years of hands-on cybersecurity experience.',
 }
 
 export default function AboutPage() {
@@ -22,7 +22,7 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-pico-accent/10 border border-pico-accent/20 rounded-full text-sm text-pico-accent mb-6 animate-fade-in">
             <Users className="w-4 h-4" />
-            Meet the Team
+            Founder-Led Studio
           </div>
 
           <h1 className="font-display text-4xl md:text-5xl font-semibold mb-6 animate-slide-up">
@@ -30,7 +30,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="text-lg text-slate-400 animate-slide-up stagger-1">
-            Hi—we&apos;re a two-person team (husband & wife) building MicroSaaS products. We both come from cybersecurity, and we care deeply about creating tools that are useful, simple, and respectful of user data.
+            Piconeuron is a small, founder-led MicroSaaS studio building focused software tools shaped by years of hands-on cybersecurity experience. The goal is simple: create useful products that are easy to use, clear about how they work, and respectful of user data.
           </p>
         </div>
       </section>
@@ -45,17 +45,17 @@ export default function AboutPage() {
               </div>
               <div>
                 <h2 className="font-display text-xl font-semibold">Built with Care</h2>
-                <p className="text-slate-500 text-sm">A small studio, not a faceless corporation</p>
+                <p className="text-slate-500 text-sm">Practical software, built with intention</p>
               </div>
             </div>
 
             <div className="space-y-4 text-slate-400">
               <p>
-                We started Piconeuron because we wanted to build software the way we believe it should be built: focused, secure, and honest. After years working in cybersecurity, we&apos;ve seen too many products that play fast and loose with user data or bury important information in confusing terms of service.
+                Piconeuron was created to build software with more care, clarity, and intention. The studio is shaped by years of hands-on cybersecurity experience and a practical understanding of user trust, data handling, and responsible design.
               </p>
               <p>
-                We do things differently. Every product we build starts with a simple question: &quot;Does this genuinely help someone?&quot; If the answer isn&apos;t a clear yes, we don&apos;t build it.
-              </p>
+              That does not mean adding complexity or making big security promises. It means building focused tools that solve real problems while keeping privacy, security, and transparency in mind from the start.
+            </p>
             </div>
           </div>
 
@@ -72,8 +72,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="font-display font-medium mb-1">Test Narrowly-Scoped Ideas</h3>
                 <p className="text-slate-400 text-sm">
-                  We believe in solving one problem really well, rather than building bloated products that try to do everything poorly.
-                </p>
+                Piconeuron focuses on solving one problem really well, instead of building bloated products that try to do everything at once.                </p>
               </div>
             </div>
 
@@ -84,8 +83,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="font-display font-medium mb-1">Ship Fast, Learn Faster</h3>
                 <p className="text-slate-400 text-sm">
-                  We get products into users&apos; hands quickly so we can learn what actually works—not what we assume will work.
-                </p>
+                Products are shipped quickly so real users can shape what works — while keeping security, privacy, and usability in mind.                </p>
               </div>
             </div>
 
@@ -96,7 +94,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="font-display font-medium mb-1">Scale What Users Want</h3>
                 <p className="text-slate-400 text-sm">
-                  We only invest time scaling features and products that users genuinely want and use—not what we think they should want.
+                Time is invested in features and products that users genuinely want and use — not unnecessary complexity.
                 </p>
               </div>
             </div>
@@ -116,8 +114,7 @@ export default function AboutPage() {
                 Cybersecurity Roots
               </h2>
               <p className="text-slate-400">
-                Our background shapes everything we build.
-              </p>
+              Cybersecurity experience shapes how each product is built.              </p>
             </div>
           </div>
 
@@ -128,7 +125,7 @@ export default function AboutPage() {
                 <span className="font-medium text-sm">Privacy by Design</span>
               </div>
               <p className="text-slate-400 text-sm">
-                We think about privacy from the start, not as an afterthought.
+              Privacy is considered early, not treated as an afterthought.              
               </p>
             </div>
 
@@ -138,17 +135,17 @@ export default function AboutPage() {
                 <span className="font-medium text-sm">Minimal Data Collection</span>
               </div>
               <p className="text-slate-400 text-sm">
-                We collect only what&apos;s necessary to provide our services.
+              Piconeuron aims to collect only what is necessary to provide its services.              
               </p>
             </div>
 
             <div className="card card-hover p-5 animate-slide-up stagger-3">
               <div className="flex items-center gap-2 text-emerald-400 mb-2">
                 <CheckCircle className="w-4 h-4" />
-                <span className="font-medium text-sm">Secure Architecture</span>
+                <span className="font-medium text-sm">Security-Minded Architecture</span>
               </div>
               <p className="text-slate-400 text-sm">
-                Security is built into our infrastructure, not bolted on later.
+              Security considerations are part of the product and infrastructure decisions from the start.              
               </p>
             </div>
 
@@ -158,7 +155,7 @@ export default function AboutPage() {
                 <span className="font-medium text-sm">Transparent Practices</span>
               </div>
               <p className="text-slate-400 text-sm">
-                We&apos;re upfront about what we do with your data.
+              Piconeuron aims to be clear about how user data is handled.
               </p>
             </div>
           </div>
@@ -168,7 +165,7 @@ export default function AboutPage() {
               href="/security"
               className="group inline-flex items-center gap-2 text-pico-accent hover:text-white transition-colors"
             >
-              Learn more about our security practices
+            Learn more about Piconeuron&apos;s security approach
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
@@ -182,7 +179,7 @@ export default function AboutPage() {
             Want to Say Hello?
           </h2>
           <p className="text-slate-400 mb-8">
-            We&apos;d love to hear from you—whether you have questions, feedback, or just want to connect.
+          Questions, feedback, and product ideas are always welcome.          
           </p>
           <Link
             href="/support#contact"
