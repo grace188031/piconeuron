@@ -22,7 +22,7 @@ export function Footer() {
               <span className="font-display font-semibold text-lg">Piconeuron</span>
             </Link>
             <p className="text-slate-500 text-sm max-w-md">
-              A small, security-minded MicroSaaS studio. We build focused tools that help people make measurable progress.
+              Where focused ideas take shape. We explore interesting problems, prototype solutions, and share what we learn along the way.
             </p>
           </div>
 
@@ -108,7 +108,7 @@ export function Footer() {
             © {currentYear} Piconeuron. All rights reserved.
           </p>
           <p className="text-slate-600 text-xs">
-            Built with care in a cybersecurity mindset.
+            Stay curious. Build with purpose.
           </p>
         </div>
       </div>

@@ -11,7 +11,7 @@ import {
 
 export const metadata = {
   title: 'About | Piconeuron',
-  description: 'Piconeuron is a small, founder-led MicroSaaS studio building focused software tools shaped by years of hands-on cybersecurity experience.',
+  description: 'Piconeuron is a small, founder-led studio that explores interesting problems and builds focused tools to solve them, shaped by hands-on cybersecurity experience.',
 }
 
 export default function AboutPage() {
@@ -30,7 +30,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="text-lg text-slate-400 animate-slide-up stagger-1">
-            Piconeuron is a small, founder-led MicroSaaS studio building focused software tools shaped by years of hands-on cybersecurity experience. The goal is simple: create useful products that are easy to use, clear about how they work, and respectful of user data.
+            Piconeuron is a small, founder-led studio built around a simple idea: find interesting problems and see what we can build to solve them. We explore, prototype, and share what we learn along the way, shaped by years of hands-on cybersecurity experience and a commitment to products that are easy to use, clear about how they work, and respectful of user data.
           </p>
         </div>
       </section>

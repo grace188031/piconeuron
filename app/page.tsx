@@ -22,20 +22,20 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-pico-navy/50 border border-pico-slate/50 rounded-full text-sm text-slate-400 mb-8 animate-fade-in">
-            <Shield className="w-4 h-4 text-pico-accent" />
-            <span>Security-Minded MicroSaaS Studio</span>
+            <Sparkles className="w-4 h-4 text-pico-accent" />
+            <span>Stay curious. Build with purpose.</span>
           </div>
 
           {/* Headline */}
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6 animate-slide-up">
-            <span className="text-gradient">We build focused tools</span>
+            <span className="text-gradient">Where focused ideas</span>
             <br />
-            <span className="text-slate-400">without the bloat.</span>
+            <span className="text-slate-400">take shape.</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 animate-slide-up stagger-1">
-            Piconeuron is a small, security-minded MicroSaaS studio. We help people make real progress, without bloated features or shady data practices.
+            Piconeuron is about finding interesting problems and seeing what we can build to solve them. Sometimes that means software, sometimes AI or automation, and sometimes something entirely different.
           </p>
 
           {/* CTA Buttons */}
@@ -66,7 +66,7 @@ export default function Home() {
               Our Products
             </h2>
             <p className="text-slate-400 max-w-xl mx-auto animate-slide-up stagger-1">
-              Focused tools that solve real problems.
+              What we&apos;re building right now.
             </p>
           </div>
 
@@ -92,7 +92,7 @@ export default function Home() {
               </h3>
               
               <p className="text-slate-400 mb-4">
-                IELTS Speaking practice with rubric-aligned scoring and actionable feedback. Practice anytime and get detailed analysis to improve your band score.
+                Guided IELTS Speaking practice that helps learners reach their target band score faster by practicing out loud and getting structured feedback.
               </p>
               
               <div className="flex items-center gap-2 text-sm text-pico-accent">
@@ -104,7 +104,7 @@ export default function Home() {
 
           {/* Coming Soon Placeholder */}
           <p className="text-center text-slate-600 text-sm mt-8 animate-slide-up stagger-3">
-            More products in development. We ship when it&apos;s ready.
+            More experiments are in the works. We share them when they&apos;re ready.
           </p>
         </div>
       </section>
