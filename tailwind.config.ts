@@ -10,15 +10,24 @@ const config: Config = {
     extend: {
       colors: {
         'pico': {
-          'dark': '#0a0f1a',
-          'darker': '#060a12',
-          'navy': '#0d1526',
-          'slate': '#1a2436',
-          'accent': '#3b82f6',
-          'accent-dim': '#2563eb',
+          'dark': '#070b26',
+          'darker': '#02071b',
+          'navy': '#0b102c',
+          'slate': '#1e2447',
+          'accent': '#8b5cf6',
+          'accent-dim': '#7c3aed',
+          'accent-light': '#a78bfa',
+          'indigo': '#6366f1',
           'green': '#10b981',
           'amber': '#f59e0b',
         }
+      },
+      borderRadius: {
+        DEFAULT: '6px',
+        'lg': '10px',
+        'xl': '14px',
+        '2xl': '18px',
+        '3xl': '24px',
       },
       fontFamily: {
         'display': ['var(--font-display)', 'system-ui', 'sans-serif'],

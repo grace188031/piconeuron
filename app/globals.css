@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --font-display: 'Outfit', system-ui, sans-serif;
-  --font-body: 'DM Sans', system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SF Mono', Menlo, monospace;
 }
 
 html {
@@ -16,10 +16,18 @@ html {
 
 body {
   font-family: var(--font-body);
-  background: #060a12;
+  background: #02071b;
   color: #e2e8f0;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Data the user reads as numbers (scores, prices, timers) stays aligned */
+.tabular-nums,
+time,
+data {
+  font-variant-numeric: tabular-nums;
 }
 
 /* Custom scrollbar */
@@ -28,16 +36,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0f1a;
+  background: #05091f;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1a2436;
+  background: #1e2447;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #2a3446;
+  background: #2d3560;
 }
 
 /* Noise texture overlay */
@@ -55,15 +63,15 @@ body {
 
 /* Grid pattern background */
 .grid-pattern {
-  background-image: 
-    linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+  background-image:
+    linear-gradient(rgba(139, 92, 246, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(139, 92, 246, 0.03) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
 /* Glow effects */
-.glow-blue {
-  box-shadow: 0 0 40px -10px rgba(59, 130, 246, 0.3);
+.glow-accent {
+  box-shadow: 0 0 40px -10px rgba(139, 92, 246, 0.35);
 }
 
 .glow-green {
@@ -78,8 +86,8 @@ body {
   background-clip: text;
 }
 
-.text-gradient-blue {
-  background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+.text-gradient-accent {
+  background: linear-gradient(135deg, #a78bfa 0%, #6366f1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -91,7 +99,7 @@ body {
 }
 
 .card-hover {
-  @apply transition-all duration-300 hover:border-pico-accent/30 hover:bg-pico-navy/70;
+  @apply transition-all duration-300 hover:border-pico-accent/30 hover:bg-pico-navy/70 hover:-translate-y-px;
 }
 
 /* Link styles */
@@ -110,7 +118,13 @@ body {
 
 /* Selection */
 ::selection {
-  background: rgba(59, 130, 246, 0.3);
+  background: rgba(139, 92, 246, 0.35);
+}
+
+/* Focus visibility */
+:focus-visible {
+  outline: 2px solid #8b5cf6;
+  outline-offset: 2px;
 }
 
 /* Stagger animation delays */
@@ -119,3 +133,17 @@ body {
 .stagger-3 { animation-delay: 0.3s; }
 .stagger-4 { animation-delay: 0.4s; }
 .stagger-5 { animation-delay: 0.5s; }
+
+/* Honor reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

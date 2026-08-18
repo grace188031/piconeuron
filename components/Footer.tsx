@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { Shield, ExternalLink } from 'lucide-react'
+import Image from 'next/image'
+import { ExternalLink } from 'lucide-react'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -11,9 +12,13 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-pico-accent to-pico-accent-dim flex items-center justify-center">
-                <Shield className="w-4 h-4 text-white" />
-              </div>
+              <Image
+                src="/piconeuron.png"
+                alt="Piconeuron logo"
+                width={32}
+                height={32}
+                className="rounded-lg"
+              />
               <span className="font-display font-semibold text-lg">Piconeuron</span>
             </Link>
             <p className="text-slate-500 text-sm max-w-md">
@@ -86,7 +91,7 @@ export function Footer() {
           </h4>
           <div className="flex flex-wrap gap-4">
             <a 
-              href="https://explore-ieltsmetrics.piconeuron.com"
+              href="https://ieltsmetrics.piconeuron.com"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 bg-pico-navy/50 border border-pico-slate/50 rounded-lg text-sm text-slate-300 hover:border-pico-accent/50 hover:text-white transition-all"

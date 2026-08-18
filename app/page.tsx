@@ -42,7 +42,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up stagger-2">
             <Link 
               href="#products"
-              className="group inline-flex items-center gap-2 px-6 py-3 bg-pico-accent hover:bg-pico-accent-dim text-white font-medium rounded-lg transition-all glow-blue"
+              className="group inline-flex items-center gap-2 px-6 py-3 bg-pico-accent hover:bg-pico-accent-dim text-white font-medium rounded-lg transition-all glow-accent"
             >
               View Our Products
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -73,14 +73,14 @@ export default function Home() {
           {/* Product Card */}
           <div className="max-w-2xl mx-auto animate-slide-up stagger-2">
             <a
-              href="https://explore-ieltsmetrics.piconeuron.com"
+              href="https://ieltsmetrics.piconeuron.com"
               target="_blank"
               rel="noopener noreferrer"
               className="group block card card-hover p-8"
             >
               <div className="flex items-start justify-between mb-4">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500/20 to-emerald-600/20 border border-emerald-500/20 flex items-center justify-center">
-                  <Sparkles className="w-6 h-6 text-emerald-400" />
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-pico-accent/20 to-pico-indigo/20 border border-pico-accent/20 flex items-center justify-center">
+                  <Sparkles className="w-6 h-6 text-pico-accent-light" />
                 </div>
                 <span className="inline-flex items-center gap-1 px-2 py-1 bg-emerald-500/10 border border-emerald-500/20 rounded text-xs text-emerald-400">
                   Live
@@ -146,8 +146,8 @@ export default function Home() {
 
             {/* Card 3 */}
             <div className="card card-hover p-6 animate-slide-up stagger-4">
-              <div className="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-4">
-                <CreditCard className="w-5 h-5 text-emerald-400" />
+              <div className="w-10 h-10 rounded-lg bg-pico-accent/10 border border-pico-accent/20 flex items-center justify-center mb-4">
+                <CreditCard className="w-5 h-5 text-pico-accent" />
               </div>
               <h3 className="font-display font-semibold mb-2">Clear Pricing</h3>
               <p className="text-slate-400 text-sm">

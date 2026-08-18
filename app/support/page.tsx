@@ -49,7 +49,7 @@ export default function SupportPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
             <div className="card card-hover p-5 flex items-start gap-3 animate-slide-up stagger-2">
-              <MessageCircle className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+              <MessageCircle className="w-5 h-5 text-pico-accent flex-shrink-0 mt-0.5" />
               <div>
                 <h4 className="font-medium text-sm mb-1">General Questions</h4>
                 <p className="text-slate-500 text-xs">
@@ -75,8 +75,8 @@ export default function SupportPage() {
       <section className="py-16 px-6 bg-pico-navy/30">
         <div className="max-w-3xl mx-auto">
           <div className="flex items-start gap-4 mb-8 animate-slide-up">
-            <div className="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0">
-              <CreditCard className="w-6 h-6 text-emerald-400" />
+            <div className="w-12 h-12 rounded-xl bg-pico-accent/10 border border-pico-accent/20 flex items-center justify-center flex-shrink-0">
+              <CreditCard className="w-6 h-6 text-pico-accent" />
             </div>
             <div>
               <h2 className="font-display text-2xl font-semibold mb-2">
@@ -104,7 +104,7 @@ export default function SupportPage() {
 
             <div className="card card-hover p-6 animate-slide-up stagger-2">
               <h3 className="font-display font-semibold mb-3 flex items-center gap-2">
-                <CreditCard className="w-4 h-4 text-emerald-400" />
+                <CreditCard className="w-4 h-4 text-pico-accent" />
                 Clear Pricing
               </h3>
               <p className="text-slate-400 text-sm">
@@ -162,7 +162,7 @@ export default function SupportPage() {
 
           <div className="card card-hover p-6 animate-slide-up stagger-1">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 rounded-xl bg-pico-accent/10 border border-pico-accent/20 flex items-center justify-center flex-shrink-0">
                 <span className="text-xl">📊</span>
               </div>
               <div>
@@ -171,7 +171,7 @@ export default function SupportPage() {
                   IELTS Speaking practice with AI-powered feedback
                 </p>
                 <a
-                  href="https://explore-ieltsmetrics.piconeuron.com"
+                  href="https://ieltsmetrics.piconeuron.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group inline-flex items-center gap-1 text-sm text-pico-accent hover:text-white transition-colors"

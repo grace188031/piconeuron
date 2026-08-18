@@ -63,8 +63,8 @@ export default function SecurityPage() {
 
             {/* Practice 2 */}
             <div className="card card-hover p-6 flex items-start gap-4 animate-slide-up stagger-2">
-              <div className="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0">
-                <Lock className="w-6 h-6 text-emerald-400" />
+              <div className="w-12 h-12 rounded-xl bg-pico-accent/10 border border-pico-accent/20 flex items-center justify-center flex-shrink-0">
+                <Lock className="w-6 h-6 text-pico-accent" />
               </div>
               <div>
                 <h3 className="font-display font-semibold text-lg mb-2">Encryption</h3>
@@ -116,8 +116,8 @@ export default function SecurityPage() {
           {/* Product Privacy Card */}
           <div className="card card-hover p-6 mb-8 animate-slide-up stagger-2">
             <div className="flex items-start gap-4">
-              <div className="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0">
-                <Database className="w-5 h-5 text-emerald-400" />
+              <div className="w-10 h-10 rounded-lg bg-pico-accent/10 border border-pico-accent/20 flex items-center justify-center flex-shrink-0">
+                <Database className="w-5 h-5 text-pico-accent" />
               </div>
               <div>
                 <h3 className="font-display font-semibold mb-2">IELTSmetrics</h3>
@@ -136,7 +136,7 @@ export default function SecurityPage() {
                   </li>
                 </ul>
                 <a
-                  href="https://explore-ieltsmetrics.piconeuron.com/privacy"
+                  href="https://ieltsmetrics.piconeuron.com/privacy"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group inline-flex items-center gap-1 text-pico-accent text-sm mt-4 hover:text-white transition-colors"

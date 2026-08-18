@@ -40,7 +40,7 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto">
           <div className="card card-hover p-8 mb-12 animate-slide-up stagger-2">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-pico-accent/20 to-emerald-500/20 border border-pico-slate flex items-center justify-center">
+              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-pico-accent/20 to-pico-indigo/20 border border-pico-slate flex items-center justify-center">
                 <Heart className="w-8 h-8 text-pico-accent" />
               </div>
               <div>
@@ -77,8 +77,8 @@ export default function AboutPage() {
             </div>
 
             <div className="card card-hover p-5 flex items-start gap-4 animate-slide-up stagger-2">
-              <div className="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center flex-shrink-0">
-                <Rocket className="w-5 h-5 text-emerald-400" />
+              <div className="w-10 h-10 rounded-lg bg-pico-accent/10 flex items-center justify-center flex-shrink-0">
+                <Rocket className="w-5 h-5 text-pico-accent" />
               </div>
               <div>
                 <h3 className="font-display font-medium mb-1">Ship Fast, Learn Faster</h3>

@@ -152,7 +152,7 @@ export default function PrivacyPage() {
                   Each product may have specific data practices. See individual product privacy pages:
                 </p>
                 <a
-                  href="https://explore-ieltsmetrics.piconeuron.com/privacy"
+                  href="https://ieltsmetrics.piconeuron.com/privacy"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group inline-flex items-center gap-1 text-pico-accent hover:text-white transition-colors"
