@@ -10,7 +10,7 @@ import {
 } from 'lucide-react'
 
 export const metadata = {
-  title: 'About — Piconeuron',
+  title: 'About | Piconeuron',
   description: 'Piconeuron is a small, founder-led MicroSaaS studio building focused software tools shaped by years of hands-on cybersecurity experience.',
 }
 
@@ -83,7 +83,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="font-display font-medium mb-1">Ship Fast, Learn Faster</h3>
                 <p className="text-slate-400 text-sm">
-                Products are shipped quickly so real users can shape what works — while keeping security, privacy, and usability in mind.                </p>
+                Products are shipped quickly so real users can shape what works, always with security, privacy, and usability in mind.</p>
               </div>
             </div>
 
@@ -94,7 +94,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="font-display font-medium mb-1">Scale What Users Want</h3>
                 <p className="text-slate-400 text-sm">
-                Time is invested in features and products that users genuinely want and use — not unnecessary complexity.
+                Time goes into features and products that users genuinely want and use, not into unnecessary complexity.
                 </p>
               </div>
             </div>

@@ -2,7 +2,7 @@ import { Scale, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Terms of Service — Piconeuron',
+  title: 'Terms of Service | Piconeuron',
   description: 'Terms of Service for Piconeuron products and services.',
 }
 

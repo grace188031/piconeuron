@@ -2,7 +2,7 @@ import { Lock, ExternalLink, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Privacy Policy — Piconeuron',
+  title: 'Privacy Policy | Piconeuron',
   description: 'Privacy Policy for Piconeuron products and services.',
 }
 

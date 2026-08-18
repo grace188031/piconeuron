@@ -4,20 +4,20 @@ import { Navigation } from '@/components/Navigation'
 import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Piconeuron — Security-Minded MicroSaaS Studio',
-  description: 'We build focused tools that help people make measurable progress—without bloated features or shady data practices.',
+  title: 'Piconeuron | Security-Minded MicroSaaS Studio',
+  description: 'We build focused tools that help people make real progress, without bloated features or shady data practices.',
   keywords: ['MicroSaaS', 'SaaS', 'Security', 'Privacy', 'IELTSmetrics', 'IELTS'],
   authors: [{ name: 'Piconeuron' }],
   openGraph: {
-    title: 'Piconeuron — Security-Minded MicroSaaS Studio',
-    description: 'We build focused tools that help people make measurable progress—without bloated features or shady data practices.',
+    title: 'Piconeuron | Security-Minded MicroSaaS Studio',
+    description: 'We build focused tools that help people make real progress, without bloated features or shady data practices.',
     url: 'https://piconeuron.com',
     siteName: 'Piconeuron',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Piconeuron — Security-Minded MicroSaaS Studio',
+    title: 'Piconeuron | Security-Minded MicroSaaS Studio',
     description: 'We build focused tools that help people make measurable progress.',
   },
 }

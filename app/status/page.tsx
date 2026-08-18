@@ -2,7 +2,7 @@ import { Activity, CheckCircle } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Status — Piconeuron',
+  title: 'Status | Piconeuron',
   description: 'Check the operational status of Piconeuron products and services.',
 }
 

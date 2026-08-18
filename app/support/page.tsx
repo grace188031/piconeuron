@@ -12,7 +12,7 @@ import {
 import ContactForm from '@/components/ContactForm'
 
 export const metadata = {
-  title: 'Support — Piconeuron',
+  title: 'Support | Piconeuron',
   description: 'Get help with Piconeuron products. Contact us, learn about billing, and find answers to common questions.',
 }
 
@@ -32,7 +32,7 @@ export default function SupportPage() {
           </h1>
 
           <p className="text-lg text-slate-400 animate-slide-up stagger-1">
-            Need help? You&apos;ll talk directly to the people who build the products—not a support ticket queue.
+            Need help? You&apos;ll talk directly to the people who build the products, not a support ticket queue.
           </p>
         </div>
       </section>
@@ -95,7 +95,7 @@ export default function SupportPage() {
                 Refund Policy
               </h3>
               <p className="text-slate-400 text-sm mb-4">
-                If you&apos;re not satisfied with a paid product, contact us within <strong className="text-white">14 days</strong> of purchase and we&apos;ll work with you to make it right—including a full refund if needed.
+                If you&apos;re not satisfied with a paid product, contact us within <strong className="text-white">14 days</strong> of purchase and we&apos;ll work with you to make it right, including a full refund if needed.
               </p>
               <p className="text-slate-500 text-xs">
                 We believe in our products, but we also believe you shouldn&apos;t feel locked in.

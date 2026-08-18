@@ -35,7 +35,7 @@ export default function Home() {
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 animate-slide-up stagger-1">
-            Piconeuron is a small, security-minded MicroSaaS studio. We help people make measurable progress—without bloated features or shady data practices.
+            Piconeuron is a small, security-minded MicroSaaS studio. We help people make real progress, without bloated features or shady data practices.
           </p>
 
           {/* CTA Buttons */}
@@ -129,7 +129,7 @@ export default function Home() {
               </div>
               <h3 className="font-display font-semibold mb-2">Small Team, Real Support</h3>
               <p className="text-slate-400 text-sm">
-                When you reach out, you&apos;ll talk to the builders. No support tickets lost in a queue—just direct, human responses.
+                When you reach out, you&apos;ll talk to the people who actually build the products. No tickets lost in a queue, just direct and honest replies.
               </p>
             </div>
 
@@ -140,7 +140,7 @@ export default function Home() {
               </div>
               <h3 className="font-display font-semibold mb-2">Calm, Sustainable Shipping</h3>
               <p className="text-slate-400 text-sm">
-                We release in small batches to keep quality high. No rushed features, no breaking changes—just steady improvement.
+                We release in small batches to keep quality high. No rushed features and no breaking changes, just steady improvement.
               </p>
             </div>
 
@@ -175,7 +175,7 @@ export default function Home() {
               </h2>
 
               <p className="text-slate-400 mb-8 animate-slide-up stagger-1">
-                We come from a cybersecurity background, so our default approach is to protect your data—not exploit it.
+                We come from a cybersecurity background, so our instinct is to protect your data rather than exploit it.
               </p>
 
               <Link
@@ -251,7 +251,7 @@ export default function Home() {
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
           <p className="text-slate-500 text-sm mt-4 animate-slide-up stagger-3">
-            We typically respond within 1–2 business days
+            We usually reply within a day or two
           </p>
         </div>
       </section>

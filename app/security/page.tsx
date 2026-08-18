@@ -13,7 +13,7 @@ import {
 } from 'lucide-react'
 
 export const metadata = {
-  title: 'Security & Privacy — Piconeuron',
+  title: 'Security & Privacy | Piconeuron',
   description: 'Learn about our practical security controls and privacy practices that protect your data.',
 }
 
@@ -35,7 +35,7 @@ export default function SecurityPage() {
           </h1>
 
           <p className="text-lg text-slate-400 animate-slide-up stagger-1">
-            We&apos;re a small team, so we focus on practical security controls that reduce real risk—not checkbox compliance theater.
+            We&apos;re a small team, so we focus on practical security controls that reduce real risk instead of checkbox compliance theater.
           </p>
         </div>
       </section>
@@ -95,7 +95,7 @@ export default function SecurityPage() {
               <div>
                 <h3 className="font-display font-semibold text-lg mb-2">No Selling Data</h3>
                 <p className="text-slate-400">
-                  We don&apos;t sell customer personal data. Period. Your information is used to provide our services—not to fuel advertising or data brokerage.
+                  We don&apos;t sell customer personal data. Period. Your information is used to provide our services, not to fuel advertising or data brokerage.
                 </p>
               </div>
             </div>

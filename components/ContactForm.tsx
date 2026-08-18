@@ -59,7 +59,7 @@ export default function ContactForm({ defaultSubject, compact = false }: Contact
         </div>
         <h3 className="font-display text-xl font-semibold mb-2">Message Sent!</h3>
         <p className="text-slate-400 mb-4">
-          Thank you for reaching out. We'll get back to you within 1-2 business days.
+          Thanks for reaching out. We'll get back to you within a day or two.
         </p>
         <button
           onClick={() => setStatus('idle')}
@@ -179,7 +179,7 @@ export default function ContactForm({ defaultSubject, compact = false }: Contact
         </button>
 
         <p className="text-center text-slate-500 text-xs">
-          We typically respond within 1-2 business days
+          We usually reply within a day or two
         </p>
       </div>
     </form>
